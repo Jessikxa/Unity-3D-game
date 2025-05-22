@@ -25,10 +25,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = (forwardCam + sideCam) * (_speed * Time.deltaTime);
 
         Vector3 Movement = new Vector3(x, 0, y) * (_speed * Time.deltaTime); 
-        _characterController.Move(Movement);
-        _characterController.(moveDirection);
+        _characterController.Move(Movement +  moveDirection);
+        //_characterController.(moveDirection);
 
         //Debug.Log(y);
-        Debug.Log(x + y);
+        //Debug.Log(x + y);
     }
 }
