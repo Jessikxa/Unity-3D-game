@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ParticleActivation : MonoBehaviour
 {
-    [SerializeField] ParticleSystem _collectParticle = null;
+    [SerializeField] public ParticleSystem _collectParticle = null;
     void Start()
     {
         
@@ -19,6 +19,8 @@ public class ParticleActivation : MonoBehaviour
 
     public void Collect()
     {
+        //_collectParticle.Pause();
+        _collectParticle.Clear();
         _collectParticle.Play();
     }
 }

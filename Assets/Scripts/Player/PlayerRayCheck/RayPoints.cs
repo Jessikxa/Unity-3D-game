@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RayPoints : MonoBehaviour
+public class RayPoints : bulletCount
 {
     //public Transform FirePoint;
     //void Start()
@@ -27,11 +27,14 @@ public class RayPoints : MonoBehaviour
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitInfo.distance, Color.red);
 
             ShootingTartget Enemy = hitInfo.transform.GetComponent<ShootingTartget>();
-
-            if (Enemy != null) 
+            if(_bulletNumber >= 0)
             {
-                Enemy.TakeDamage(10);
+                if (Enemy != null)
+                {
+                    Enemy.TakeDamage(10);
+                }
             }
+            
 
         }
         else
