@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class RayPoints : bulletCount
+public class RayPoints : Shooting
 {
     //public Transform FirePoint;
     //void Start()
@@ -10,6 +11,7 @@ public class RayPoints : bulletCount
 
     //}
 
+    
 
     void Update()
     {
@@ -48,12 +50,3 @@ public class RayPoints : bulletCount
 
 
 
-//public void shooting()
-//{
-//    RaycastHit hit;
-
-//    if (Physics.Raycast(FirePoint.position, transform.TransformDirection(Vector3.forward), out hit, 100))
-//    {
-//        Debug.DrawRay(FirePoint.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-//    }
-//}

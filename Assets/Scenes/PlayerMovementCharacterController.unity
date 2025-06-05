@@ -423,7 +423,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2f870ba6eefb221499a6c4eac6819c40, type: 2}
+  - {fileID: 2100000, guid: faeaa0cd225a08a44a8a838af3559c82, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1060,7 +1060,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d62979aebb882804e8b506365ef42a89, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1420,6 +1420,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2543100236940067438, guid: 8439ead2839afe64abc061ed2f0d04ef, type: 3}
   m_PrefabInstance: {fileID: 3664767359127075436}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &911189012 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 270447133772613626, guid: 8439ead2839afe64abc061ed2f0d04ef, type: 3}
+  m_PrefabInstance: {fileID: 3664767359127075436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a520585b4a49b774f94d5600c293972c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &911488772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1838,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _collectParticle: {fileID: 2079840530}
   _bulletNumber: 10
+  OnShoot:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 911189012}
+        m_TargetAssemblyTypeName: Shooting, Assembly-CSharp
+        m_MethodName: ReloadBullet
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1402600432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1973,7 +1999,7 @@ Transform:
   m_GameObject: {fileID: 1458919759}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.088, y: 0.81, z: 0}
+  m_LocalPosition: {x: 7, y: 0.81, z: 0}
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
