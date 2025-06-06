@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: green-shower-tile1_albedo
+  m_Name: elegant-stone-tiles_albedo
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -27,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 4a1728ae6bb9d414bb10770802db049a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 11b753a781453d64398f57d3d85ae134, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -44,22 +44,22 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 10, y: 10}
+        m_Scale: {x: 5, y: 3}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3bf58774e0651e741a51e3fe94b786ef, type: 3}
-        m_Scale: {x: 10, y: 10}
+        m_Texture: {fileID: 2800000, guid: efa7f022586c0ae4d8a983a17bcf2fcd, type: 3}
+        m_Scale: {x: 5, y: 3}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 0dfc3a1eb713fc443bb739997d3adccd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8e43714329c2fc14eb471cfc822f8533, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 003709fb9852a5e498b248a4676e4d17, type: 3}
+        m_Texture: {fileID: 2800000, guid: 035d17b9eca3c284daf0111b4cf0e464, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 44caf10f7c9f7b34e907544e85dae2fb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 096531dcfcf2c1f45ac53640d92658e2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []

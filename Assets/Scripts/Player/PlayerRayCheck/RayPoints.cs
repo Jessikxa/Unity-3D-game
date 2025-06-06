@@ -29,13 +29,16 @@ public class RayPoints : Shooting
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitInfo.distance, Color.red);
 
             ShootingTartget Enemy = hitInfo.transform.GetComponent<ShootingTartget>();
-            if(_bulletNumber >= 0)
+           
+            if( _bulletNumber <= 0 )
             {
                 if (Enemy != null)
                 {
                     Enemy.TakeDamage(10);
                 }
             }
+            
+            
             
 
         }
