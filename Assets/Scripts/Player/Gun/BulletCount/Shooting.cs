@@ -6,11 +6,11 @@ using UnityEngine.Events;
 public class Shooting : ParticleActivation
 {
     [SerializeField] public int _bulletNumber = 10;
-    public UnityEvent<int> OnShoot = new UnityEvent<int>();
+    //public UnityEvent<int> OnShoot = new UnityEvent<int>();
 
     private void Start()
     {
-        OnShoot.AddListener(hasShot);
+        //OnShoot.AddListener(hasShot);
     }
 
    
@@ -22,7 +22,7 @@ public class Shooting : ParticleActivation
         {
             BulletCount(1);
             Debug.Log("shot a bullet");
-            OnShoot.Invoke(1);
+            //OnShoot.Invoke(1);
         }
 
 
@@ -63,8 +63,8 @@ public class Shooting : ParticleActivation
     }
 
 
-    private void hasShot(int ammoAmount)
-    {
-        print($"almost no ammo left. you have {ammoAmount} bullets");
-    }
+    //private void hasShot(int ammoAmount)
+    //{
+    //    print($"almost no ammo left. you have {ammoAmount} bullets");
+    //}
 }

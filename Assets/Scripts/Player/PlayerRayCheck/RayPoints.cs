@@ -11,7 +11,7 @@ public class RayPoints : Shooting
 
     //}
 
-    
+
 
     void Update()
     {
@@ -22,6 +22,7 @@ public class RayPoints : Shooting
     }
     public void shooting()
     {
+        
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out RaycastHit hitInfo, 20f))
         {
             //Debug.Log("Hit Something");
