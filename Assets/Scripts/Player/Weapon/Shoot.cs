@@ -22,10 +22,16 @@ public class Shoot : MonoBehaviour
             Debug.Log(hit.transform.name);
 
             ShootThem enemy = hit.transform.GetComponent<ShootThem>();
+            //BackAndForthMovement target = hit.transform.GetComponent<BackAndForthMovement>();
             if(enemy != null)
             {
                 enemy.TakeDamage(10);
             }
+
+            //if(target != null)
+            //{
+            //    target.hasShot = true;
+            //}
         }
     }
 }
