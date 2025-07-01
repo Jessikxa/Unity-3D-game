@@ -9,7 +9,7 @@ public class ShootThem : MonoBehaviour
     {
         hp -= damage;
 
-        if (hp < 0)
+        if (hp <= 0)
         {
             Die();
         }
